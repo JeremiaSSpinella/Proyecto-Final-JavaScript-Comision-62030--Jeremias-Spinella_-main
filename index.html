@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--LINK CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- LINK AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--meta tags-->
+    <meta name="description" content="Visita LR BARBER en Quilmes para cortes de cabello, afeitados y arreglos de barba profesionales. Disfruta de un servicio de alta calidad en un ambiente acogedor. Reserva tu cita hoy mismo.">
+    <!--Meta Keywords-->
+    <meta name="keywords" content="barbería, barbero, corte de cabello, afeitado, arreglo de barba, curso de barbería en Quilmes, mejor barbero en Quilmes, servicios de barbería">
+    <!--Meta author-->
+    <meta name="author" content="Jeremias Spinella">
+    <!--Meta geo-->
+    <meta name="geo.placename" content="Buenos Aires Quilmes Centro Argentina">
+    <!--Meta Telephone-->
+    <meta name="telephone" charset="+54 1122566066">
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="img/icons8-peluquero-50.png" type="image/x-icon">
+
+    <style>
+        .navbar-brand img {
+            max-height: 50px;
+        }
+
+        .cta-button {
+            background-color: #d9534f;
+            color: rgb(245, 245, 245);
+            border: none;
+        }
+
+        .cta-button:hover {
+            background-color: #c9302c;
+            color: white;
+        }
+
+        .hero {
+            background-image: url('img');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 0;
+        }
+
+        .hero h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .info-section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/icons8-peluquero-50.png" alt="Logo de la Barbería">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/cortes.html">Cortes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                    <a href="html/reserva.html" class="btn cta-button">Reservar Cita</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section data-aos="fade" data-aos-duration="2500" data-aos-easing="ease-in-out">
+        <img class="banner" src="img/LR BARBER.png">
+        <div class="container">
+            <h1>Bienvenidos a Nuestra Barbería</h1>
+            <p>Donde el estilo y la calidad se encuentran</p>
+            <a href="html/reserva.html" class="btn cta-button">Reservar Cita</a>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Sobre Nosotros</h2>
+                    <p>En nuestra barbería, ofrecemos una experiencia única y personalizada para cada cliente. Nuestro
+                        equipo de barberos profesionales está dedicado a brindar el mejor servicio y asegurarse de que
+                        salgas luciendo y sintiéndote lo mejor posible.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/corte.jpg" alt="Imagen de la barbería" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section">
+        <div class="container">
+            <h2>Reservar Cita</h2>
+            <form id="reservaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="servicio">Servicio:</label>
+                    <select id="servicio" class="form-control" required>
+                        <option value="Corte de Cabello">Corte de Cabello</option>
+                        <option value="Afeitado Clásico">Afeitado Clásico</option>
+                        <option value="Arreglo de Barba">Arreglo de Barba</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha" class="form-control" required>
+                </div>
+                <button type="submit" class="btn cta-button">Guardar Reserva</button>
+            </form>
+            <div id="reservas"></div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Almacenar reservas en localStorage
+        const reservaForm = document.getElementById('reservaForm');
+        const reservasDiv = document.getElementById('reservas');
+
+        function guardarReserva(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('nombre').value;
+            const servicio = document.getElementById('servicio').value;
+            const fecha = document.getElementById('fecha').value;
+
+            let reservas = JSON.parse(localStorage.getItem('reservas')) || [];
+
+            const nuevaReserva = {
+                nombre,
+                servicio,
+                fecha
+            };
+
+            reservas.push(nuevaReserva);
+            localStorage.setItem('reservas', JSON.stringify(reservas));
+
+            mostrarReservas();
+            reservaForm.reset();
+        }
+
+        function mostrarReservas() {
+            let reservas = JSON.parse(localStorage.getItem('reservas')) || [];
+
+            reservasDiv.innerHTML = reservas.map(reserva => `
+                <div class="card mt-3">
+                    <div class="card-body">
+                        <h5 class="card-title">${reserva.nombre}</h5>
+                        <p class="card-text">Servicio: ${reserva.servicio}</p>
+                        <p class="card-text">Fecha: ${reserva.fecha}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        reservaForm.addEventListener('submit', guardarReserva);
+        document.addEventListener('DOMContentLoaded', mostrarReservas);
+    </script>
+</body>
+
+</html>
+

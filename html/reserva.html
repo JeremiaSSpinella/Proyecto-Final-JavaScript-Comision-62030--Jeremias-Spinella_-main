@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu Turno - LR|Barbería</title>
+    <!--LINK CS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--LINK DE BOOTSTRAP-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1605733160314-03e8d5268d0b');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+        .form-title {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .btn-custom {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="col-md-6 form-container">
+            <h2 class="text-center form-title">Reserva tu Turno</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre completo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Ingresa tu número de teléfono" required>
+                </div>
+                <div class="mb-3">
+                    <label for="service" class="form-label">Servicio</label>
+                    <select class="form-select" id="service" required>
+                        <option selected disabled value="">Selecciona un servicio</option>
+                        <option value="corte">Corte de Pelo</option>
+                        <option value="afeitado">Afeitado</option>
+                        <option value="corte-afeitado">Corte y Afeitado</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="date" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="time" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="time" required>
+                </div>
+                <button type="submit" class="btn btn-custom w-100">Reservar Turno</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

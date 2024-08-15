@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería - Sección de Cortes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+   
+   <style>
+        .cuts-section {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        .cuts-section h2 {
+            margin-bottom: 30px;
+        }
+        .cuts-section .card {
+            border: none;
+            visibility: hidden;
+        }
+        .cuts-section .card img {
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="cuts-section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Nuestros Cortes de Pelo</h2>
+                <p>Explora nuestra galería para ver algunos de los estilos que ofrecemos en nuestra barbería. Desde cortes clásicos hasta los estilos más modernos, tenemos algo para todos.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated">
+                        <img src="../img/1.png" class="card-img-top" alt="Corte de pelo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte Clásico</h5>
+                            <p class="card-text">Un estilo atemporal para aquellos que prefieren la elegancia clásica.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated">
+                        <img src="../img/2.png" class="card-img-top" alt="Corte de pelo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte Moderno</h5>
+                            <p class="card-text">Para los que buscan un look fresco y a la moda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card animate__animated">
+                        <img src="../img/3.png" class="card-img-top" alt="Corte de pelo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Corte de Degradado</h5>
+                            <p class="card-text">Un corte sofisticado con un degradado suave para un look pulido.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Barbería El Estilo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__flipInY');
+                        entry.target.style.visibility = 'visible';
+                    }
+                });
+            });
+
+            cards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>

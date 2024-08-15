@@ -1,0 +1,10 @@
+// Banner styles
+@import "../utilities/variables";
+.banner {
+    width: 100%;
+    /* background-image: url(../../img/LR\ BARBER.png); */
+    background-size: cover;
+    color: $secondary-color;
+    text-align: center;
+    padding: $banner-padding;
+}

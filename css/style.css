@@ -1,0 +1,76 @@
+@charset "UTF-8";
+header {
+  background-color: rgb(32, 31, 31);
+  color: #fff;
+  padding: 20px 0;
+}
+header h1 {
+  font-size: 24px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+  margin-left: 210px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.banner {
+  width: 100%;
+  /* background-image: url(../../img/LR\ BARBER.png); */
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*body*/
+body {
+  font-family: "Arial, sans-serif";
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  color: rgb(32, 31, 31);
+  font-size: 5rem;
+}
+
+section .container {
+  color: black;
+}
+
+#servicios {
+  padding: 50px 0;
+}
+#servicios .servicio {
+  margin-bottom:  20px;
+}
+#servicios .servicio h3 {
+  color: rgb(32, 31, 31);
+}
+
+#equipo {
+  padding: 50px 0;
+}
+#equipo .barbero {
+  text-align: center;
+}
+#equipo .barbero img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom:  20px;
+}
+
+/*# sourceMappingURL=style.css.map */

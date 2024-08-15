@@ -1,0 +1,26 @@
+@import "../utilities/variables";
+header {
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: $header-padding;
+
+    h1 {
+        font-size: $font-size-h1;
+    }
+    // Navigation styles
+nav {
+    ul {
+            list-style: none;
+
+        li {
+            display: inline;
+            margin-left: $nav-margin-left;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,9 @@
+
+// Footer styles
+@import "../utilities/variables";
+footer {
+    background-color: $primary-color;
+    color: $secondary-color;
+    text-align: center;
+    padding: $header-padding;
+}

@@ -1,0 +1,7 @@
+@mixin fuente-relleno ($bg,$color)
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:$bg;
+    color:$color;
+}
+

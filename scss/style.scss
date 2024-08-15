@@ -1,0 +1,47 @@
+
+// layout
+@import "./layout/header";
+@import "./layout/portada"; 
+//base 
+@import "./base/reset";
+
+// utilities
+@import "./utilities/variables";
+@import "./components/titulop";
+
+
+section .container {
+    color: black;
+}
+
+
+
+
+// Servicios section styles
+#servicios {
+    padding: $section-padding;
+    .servicio {
+        margin-bottom: $margin-bottom-servicio;
+
+        h3 {
+            color: $primary-color;
+        }
+    }
+}
+
+// Equipo section styles
+#equipo {
+    padding: $section-padding;
+
+    .barbero {
+        text-align: center;
+
+        img {
+            width: $image-width;
+            border-radius: $image-border-radius;
+            margin-bottom: $margin-bottom-servicio;
+        }
+    }
+}
+
+
