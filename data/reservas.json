@@ -1,0 +1,15 @@
+{
+    "reservas": [
+      {
+        "nombre": "Juan Perez",
+        "servicio": "Corte de Cabello",
+        "fecha": "2024-09-10"
+      },
+      {
+        "nombre": "María Lopez",
+        "servicio": "Afeitado Clásico",
+        "fecha": "2024-09-11"
+      }
+    ]
+  }
+  
